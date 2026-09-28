@@ -16,7 +16,7 @@ async def main():
             print("tools:", [t.name for t in tools.tools])
 
             result = await session.call_tool("list_notes", {})
-            print("notes:", [c.text for c in result.content])
+            print("notes:",result.content[0].text)
 
             result = await session.call_tool("read_note", {"name": "todo.txt"})
             print("todo.txt:", [c.text for c in result.content])
