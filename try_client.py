@@ -4,7 +4,7 @@ import sys
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-params = StdioServerParameters(command=sys.executable, args=["demo_server.py"])
+params = StdioServerParameters(command=sys.executable, args=["proxy.py"])
 
 
 async def main():
