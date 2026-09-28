@@ -77,3 +77,11 @@ Any tool not listed falls back to `default`.
 - Policy decisions are based on tool name only, not on the actual arguments (e.g. `delete_note` always asks, rather than only asking when the file matches something important).
 - The approval queue is polled with `asyncio.sleep`, not event-driven.
 - Approval currently only works through a terminal running `approve.py`. A Telegram bot or web UI would make this usable when you're not at your computer.
+
+
+https://github.com/user-attachments/assets/ccddb436-7767-4882-9cda-130592092c23
+
+
+
+
+
