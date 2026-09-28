@@ -1,0 +1,7 @@
+default: ask
+
+rules:
+  list_notes: allow
+  read_note: allow
+  delete_note: ask
+  send_message: ask
