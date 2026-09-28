@@ -24,5 +24,8 @@ async def main():
             result = await session.call_tool("delete_note", {"name": "meeting.txt"})
             print("delete result:", result.content[0].text)
 
+            result = await session.call_tool("send_message", {"to": "boss", "text": "hi"})
+            print("send result:", result.content[0].text)
+
 
 asyncio.run(main())
